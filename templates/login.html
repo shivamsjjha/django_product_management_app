@@ -1,0 +1,51 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="container-fluid" style="" align="center">
+	<div class="col-sm-12" style="margin-top: 60px;" align="center">
+	<div class="col-sm-3" style="padding-top: 0px; background-color:; padding-bottom: 20px; box-shadow: 1px 3px 5px 5px #adb3b3">
+		<div class="container bg-info" style="padding-top: 10px; padding-bottom: 10px; margin-bottom: 30px;" align="center">
+			<p style="font-size: 20px; color: #fff;">Login Here</p>
+		</div>
+	<div class="container">	
+	<form action="" method="post">
+	  	{% csrf_token %}
+	    <input type="text" name="username" placeholder="Enter Username"><br><br>
+			<input type="password" name="password" placeholder="Enter Password"><br><br>
+			<div>
+			{% for message in messages %}
+			<p>
+				{{ message }}
+			</p>
+			{% endfor %}
+		</div>
+			<button type="submit" class="btn btn-primary">login</button>
+	</form> </div>
+	<p style="padding-top: 5px;"><a href="\signup">forgot password?</a> | dont have any account?<a href="\signup">signup here</a></p>
+	
+	</div>
+</div>
+
+</div>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

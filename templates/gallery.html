@@ -1,0 +1,18 @@
+{% extends 'header.html' %}
+{% block content %}
+<div class="row">
+	{% for cat in categories %}
+		<div class="col-sm-6" style="padding: 5px; margin: 30px; border: 1px solid black;">
+			<a href="{{cat.category_slug}}" style="color: #000">
+				<div class="card content">
+					<div class="card-title">{{cat.tutorial_category}}</div>
+					<p>{{cat.category_summary}}</p>
+				</div>
+			</a>
+		</div>
+	{% endfor %}
+	</div>
+</div>
+{% endblock %}
+
+		

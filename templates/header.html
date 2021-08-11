@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <title>Motivation.Com</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<body style="font-family: 'Questrial', sans-serif">
+  <div class="" style="display: block; margin: auto;">
+  <nav class="navbar navbar-expand-md bg-info navbar-dark">
+    <a class="navbar-brand text-white" href="\home" style="font-family: 'Orbitron', sans-serif;">Motivation</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <i class="fa fa-align-right text-white"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ml-auto text-center">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="\home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="\about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="\gallery">Explore</a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link text-white" href="\contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="\logout">Logout</a>
+        </li>    
+      </ul>
+    </div>  
+  </nav>
+  {% block content %}
+  {% endblock %}
+  </div>
+
+  
+<!-- Footer -->
+  <div  class="footer bg-info" style="position:fixed; left:0;bottom: 0px; width: 100%; text-align: center; padding-top: 30px;">
+    <div class="container" style="text-align: center;">
+      <i class='fab fa-linkedin' style='font-size:24px; padding-right: 5px;'></i>
+      <i class='fab fa-facebook-square' style='font-size:24px; padding-right: 5px;'></i>
+      <i class='fab fa-twitter-square' style='font-size:24px; padding-right: 5px;'></i>
+      <i class='fab fa-instagram-square' style='font-size:24px; padding-right: 5px;'></i>
+      <i class='fab fa-youtube' style='font-size:24px; padding-right: 5px;'></i><br>
+      <p>©Copyright 2020
+        <a href="mailto:hege@example.com" style="color: black;">Motivation.com</a></p>
+    </div>
+  </div>
+
+</body>
+</html>

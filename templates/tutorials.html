@@ -1,0 +1,15 @@
+{% extends 'header.html' %}
+{% block content %}
+<div class="container" align="center">
+		<div class="col-sm-6" style="">
+			{% for tut in context %}
+				<div class="card content" style="padding: 5px; margin: 30px; border: 1px solid black;">
+					<h3 class="card-title">{{tut.title}}</h3>
+					<p>{{tut.content}}</p>
+					<p>{{tut.published}}</p> 
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+{% endblock %}
